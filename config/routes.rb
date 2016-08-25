@@ -55,5 +55,7 @@ Rails.application.routes.draw do
   #   end
 
 
+  root 'index#welcome'
+  get '/' =>  'index#welcome'
   get 'welcome/index' => 'welcome#index'
 end
